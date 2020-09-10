@@ -53,7 +53,7 @@ export default () => {
                     "retina_detect": true
             }} />
             <section className='header-nav-wrapper'>
-                <a href='#'>Skills</a>
+                <a href='#skills'>Skills</a>
                 <a href='#'>Projects</a>
                 <a href='#'>Experience</a>
                 <a href='#'>Education</a>

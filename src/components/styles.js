@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import theme from '../theme';
 
+// ============= Main styles for the header =============
 export const Header = styled.header`
     position: relative;
     .header-content-wrapper{
@@ -44,5 +45,62 @@ export const Header = styled.header`
                 transition: color .5s ease;
             }
         }
+    }
+`;
+
+// ============= Main styles for the skills section =============
+export const Skills = styled.section`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1, h2, p{
+        text-align: center;
+    }
+    h1{
+        font-size: 1.8rem;
+        margin: 0;
+    }
+    .skills-wrapper{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+`;
+
+// ============= Main styles for the skills section =============
+export const Projects = styled.section`
+    width: 100%;
+`;
+
+// ============= Global Styled Components =============
+export const SectionWrapper = styled.div`
+    margin: 50px auto;
+    width: 80%;
+`;
+
+export const Hexagon = styled.div`
+    position: absolute;
+    top: 10px;
+    width: 60px; 
+    height: 34.64px;
+    background-color: #07c2ca;
+    margin: 17.32px 0;
+    :before, :after{
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+    }
+    :before{
+        bottom: 100%;
+        border-bottom: 17.32px solid #07c2ca;
+    }
+    :after{
+        top: 100%;
+        width: 0;
+        border-top: 17.32px solid #07c2ca;
     }
 `;

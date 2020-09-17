@@ -61,7 +61,7 @@ export default () => {
     return (
         <Skills id='skills'>
             <h1>Skills</h1>
-            <h2>Languages</h2>
+            <h3>Languages</h3>
             <div className='skills-wrapper'>
                 <SkillWrapper children={<Javascript/>} name='Javascript'/>
                 <SkillWrapper children={<Python/>} name='Python'/>
@@ -73,7 +73,7 @@ export default () => {
                 <SkillWrapper children={<Postgresql/>} name='PostgreSQL'/>
                 <SkillWrapper children={<Java/>} name='Java'/>
             </div>
-            <h2>Frameworks/Libraries</h2>
+            <h3>Frameworks/Libraries</h3>
             <div className='skills-wrapper'>
                 <SkillWrapper children={<ReactLogo/>} name='React.js'></SkillWrapper>
                 <SkillWrapper children={<Redux/>} name='Redux'></SkillWrapper>
@@ -82,7 +82,7 @@ export default () => {
                 <SkillWrapper children={<Apollographql/>} name='Apollo'></SkillWrapper>
                 <SkillWrapper children={<Spring/>} name='Spring'></SkillWrapper>
             </div>
-            <h2>Tools</h2>
+            <h3>Tools</h3>
             <div className='skills-wrapper'>
                 <SkillWrapper children={<Git/>} name='Git'></SkillWrapper>
                 <SkillWrapper children={<Github/>} name='Github'></SkillWrapper>

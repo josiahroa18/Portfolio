@@ -55,9 +55,9 @@ export default () => {
             <section className='header-nav-wrapper'>
                 <a href='#skills'>Skills</a>
                 <a href='#'>Projects</a>
-                <a href='#'>Experience</a>
-                <a href='#'>Education</a>
+                <a href='#'>Resume</a>
                 <a href='#'>Contact</a>
+                {/* TODO: Add linkedin and github link */}
             </section>
         </Header>
     );

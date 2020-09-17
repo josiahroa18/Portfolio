@@ -1,6 +1,6 @@
 import React from 'react';
 import Particles from 'react-particles-js';
-import { Header } from './styles';
+import { Header, GithubHeader, LinkedInHeader, LinkWrapper } from './styles';
 import theme from '../theme';
 
 /**
@@ -54,10 +54,27 @@ export default () => {
             }} />
             <section className='header-nav-wrapper'>
                 <a href='#skills'>Skills</a>
-                <a href='#'>Projects</a>
-                <a href='#'>Resume</a>
-                <a href='#'>Contact</a>
+                <a href='#projects'>Projects</a>
+                <a href='#contact'>Contact</a>
+                <a 
+                    href='https://docs.google.com/document/d/1njHmKczfWgIKkfRxtV5VTxh-sdC0X9Ch7Z5dZW6-JfM/edit?usp=sharing'
+                    target='_blank'
+                >
+                    Resume
+                </a>
                 {/* TODO: Add linkedin and github link */}
+                <LinkWrapper
+                    href='https://www.linkedin.com/in/josiah-roa/'
+                    target='_blank'
+                >
+                    <LinkedInHeader/>
+                </LinkWrapper>
+                <LinkWrapper
+                    href='https://github.com/josiahroa18'
+                    target='_blank'
+                >
+                    <GithubHeader/>
+                </LinkWrapper>
             </section>
         </Header>
     );

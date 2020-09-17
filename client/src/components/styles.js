@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import theme from '../theme';
 import { Web } from '@styled-icons/foundation';
 import { Github } from '@styled-icons/boxicons-logos';
+import { LinkedinSquare } from '@styled-icons/boxicons-logos';
 
 // ============= Main styles for the header =============
 export const Header = styled.header`
@@ -105,6 +106,16 @@ export const ProjectCard = styled.div`
             color: ${theme.colors.pink};
             margin: 0;
         }
+        .task-container {
+            color: ${theme.colors.white};
+            ul {
+                padding: 0;
+            }
+            ul li {
+                list-style-position: inside;
+                margin: 0;
+            }
+        }
     }
     .card{
         img{
@@ -117,6 +128,19 @@ export const ProjectCard = styled.div`
             display: flex;
             align-items: center;
         }
+    }
+`;
+
+// ============= Main styles for the contact section =============
+export const Contact = styled.section`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-size: 1.8rem;
+        margin: 0;
+        margin-bottom: 20px;
     }
 `;
 
@@ -151,6 +175,11 @@ export const Hexagon = styled.div`
     }
 `;
 
+export const LinkWrapper = styled.a`
+    text-decoration: none;
+    cursor: pointer;
+`;
+
 export const WebIcon = styled(Web)`
     color: ${theme.colors.lightBlue};
     width: 40px;
@@ -167,7 +196,22 @@ export const GithubIcon = styled(Github)`
     }
 `;
 
-export const LinkWrapper = styled.a`
-    text-decoration: none;
-    cursor: pointer;
+export const GithubHeader = styled(Github)`
+    color: ${theme.colors.white};
+    width: 30px;
+    &:hover{
+        color: ${theme.colors.pink};
+        transition: color .5s ease;
+    }
 `;
+
+export const LinkedInHeader = styled(LinkedinSquare)`
+    color: ${theme.colors.white};
+    width: 30px;
+    &:hover{
+        color: ${theme.colors.pink};
+        transition: color .5s ease;
+    }
+`;
+
+

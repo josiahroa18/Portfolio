@@ -1,5 +1,5 @@
-const project = require('./Project');
+const { Project } = require('./Project');
 
 module.exports = {
-    project
+    Project
 }

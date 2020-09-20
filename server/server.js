@@ -11,7 +11,9 @@ connectDb();
 const server = new ApolloServer({
     typeDefs,
     resolvers,
-    context: { models }
+    context: { models },
+    introspection: true,
+    playground: true
 });
 
 server.listen({ port: process.env.PORT || PORT}).then(res => {

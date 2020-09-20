@@ -11,16 +11,16 @@ export default ({ project }) => {
     /**
      * Expected project structure:
      * {
-     *  @number id 
-     *  @string name 
-     *  @string description 
-     *  @string stack
+     *  @number @required id 
+     *  @string @required name 
+     *  @string @required description 
+     *  @string @required stack
      *  @string github
      *  @string url
-     *  @path img
-     *  @array_string tasks
-     *  @string start_date
-     *  @string end_date
+     *  @string img
+     *  @array @string @required tasks
+     *  @string @required start_date
+     *  @string @required end_date
      * }
      */
 
@@ -39,19 +39,23 @@ export default ({ project }) => {
                 </div>
             </div>
             <div className='card'>
-                <img src={project.path} alt={project.name}/>
-                <div className='card-footer'>
-                    {project.url.length > 0 && (
-                        <LinkWrapper href={project.url} target='_blank'>
-                            <WebIcon/>
-                        </LinkWrapper>
-                    )}
-                    {project.github.length > 0 && (
-                        <LinkWrapper href={project.github} target='_blank'>
-                            <GithubIcon/>
-                        </LinkWrapper>
-                    )}  
-                </div>
+                {project.img.length > 0 && (
+                    <img src={project.img} alt={project.name}/>
+                )}
+                {(project.url.length > 0 || project.github.length > 0) && (
+                    <div className='card-footer'>
+                        {project.url.length > 0 && (
+                            <LinkWrapper href={project.url} target='_blank'>
+                                <WebIcon/>
+                            </LinkWrapper>
+                        )}
+                        {project.github.length > 0 && (
+                            <LinkWrapper href={project.github} target='_blank'>
+                                <GithubIcon/>
+                            </LinkWrapper>
+                        )}  
+                    </div>
+                )}
             </div>
         </ProjectCard>
     );

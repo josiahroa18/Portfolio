@@ -144,6 +144,75 @@ export const Contact = styled.section`
     }
 `;
 
+export const ContactForm = styled.form`
+    width: 80%;
+    max-width: 850px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: ${theme.colors.darkBlue};
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    label{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        color: ${theme.colors.white};
+        font-size: 1.2rem;
+        font-family: ${theme.font}
+    }
+    input{
+        height: 30px;
+        font-size: 1.2rem;
+        outline: none;
+        font-family: ${theme.font}
+    }
+    .basic-info{
+        display: flex;
+        justify-content: space-between;
+        .input-wrapper{
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    textarea{
+        resize: none;
+        height: 200px;
+        outline: none;
+        font-size: 1.2rem;
+        font-family: ${theme.font}
+    }
+`;
+
+export const SubmitButton = styled.div`
+    background-color: ${props => props.disabled ? (
+        theme.colors.grey
+    ) : (
+        theme.colors.lightBlue
+    )};
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: ${theme.colors.white};
+    cursor: ${props => props.disabled ? 'default' : 'pointer'};
+    border: 1px solid ${props => props.disabled ? (
+        theme.colors.grey
+    ) : (
+        theme.colors.lightBlue
+    )};
+    ${props => !props.disabled && `
+        &:hover{
+            background-color: ${theme.colors.darkBlue};
+            color: ${theme.colors.lightBlue};
+            transition: .5s ease;
+        }
+    `}
+`;
+
 // ============= Global Styled Components =============
 export const SectionWrapper = styled.div`
     margin: 50px auto;

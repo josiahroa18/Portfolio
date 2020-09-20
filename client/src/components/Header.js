@@ -59,6 +59,7 @@ export default () => {
                 <a 
                     href='https://docs.google.com/document/d/1njHmKczfWgIKkfRxtV5VTxh-sdC0X9Ch7Z5dZW6-JfM/edit?usp=sharing'
                     target='_blank'
+                    rel="noopener noreferrer"
                 >
                     Resume
                 </a>
@@ -79,3 +80,4 @@ export default () => {
         </Header>
     );
 }
+

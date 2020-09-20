@@ -5,7 +5,8 @@ const theme = {
         pink: '#E3266D',
         lightBlue: '#07C2CA',
         white: '#FFFFFF',
-        black: '#444649'
+        black: '#444649',
+        grey: '#888888'
     },
     fontSizes: {
         title1: '',
